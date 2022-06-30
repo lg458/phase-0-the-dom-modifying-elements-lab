@@ -1,10 +1,9 @@
-//removing DOM node main#main
-const element = document.getElementById("main") 
-element.remove(); 
+//removes main 
+const main = document.getElementById('main'); 
+main.remove(); 
 
-//creating new header
-const newHeader = document.createElement("h1"); 
+//modifies and appends new header *making sure to append after all changes have been made, despite order of tests*
+const newHeader = document.createElement('h1'); 
 newHeader.setAttribute('id', 'victory'); 
-
-//adds text to newHeader node 
 newHeader.textContent = "Laura is the champion";
+document.body.append(newHeader); 
